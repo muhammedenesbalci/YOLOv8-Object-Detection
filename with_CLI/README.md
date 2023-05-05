@@ -6,12 +6,15 @@
 
 Pip install the ultralytics package including all requirements.  
   
-pip install ultralytics  
+
+    pip install ultralytics  
+
   
   
 Run this comman in CLI.  
   
-yolo predict model=yolov8n.pt source='img.jpg' show=True save_txt=True  
+
+    yolo predict model=yolov8n.pt source='img.jpg' show=True save_txt=True  
 
 **Models**
 
