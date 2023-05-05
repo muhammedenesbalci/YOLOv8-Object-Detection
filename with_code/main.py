@@ -101,6 +101,7 @@ def customized_annotations_video(video_pth):
 
         except Exception as e:
             print(e)
+            
         # Show video
         cv2.imshow("frame", frame)
 
