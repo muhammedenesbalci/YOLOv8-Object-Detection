@@ -12,7 +12,6 @@ Pip install the ultralytics package including all requirements.
 ```
 pip install ultralytics  
 ```
-Use cases
 
 **Models**  
 
