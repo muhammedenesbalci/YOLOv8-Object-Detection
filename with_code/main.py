@@ -123,3 +123,4 @@ customized_annotations_img(img_pth)
 
 video_pth = "../datas/test_video.mp4"
 customized_annotations_video(video_pth)
+
