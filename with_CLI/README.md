@@ -1,4 +1,4 @@
-## YOLOV8 with Command Line Interface
+## YOLOV8 with CLI(Command Line Interface)
 
   
 
