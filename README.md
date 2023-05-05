@@ -14,5 +14,5 @@ Customized annotations on video and images
 
 **Resources**
 
- - https://docs.ultralytics.com/
+ - https://docs.ultralytics.com/modes/predict/
  - https://github.com/ultralytics/ultralytics
