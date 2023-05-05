@@ -2,9 +2,9 @@
 
 **Contents**
 
- -  Automatic annotations for an image
- -  Customized annotations for an image
- - customized annotations for a video
+ - Automatic annotations for an image
+ - Customized annotations for an image
+ - Customized annotations for a video
 
 **Requirements**
 
