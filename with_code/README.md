@@ -1,4 +1,4 @@
-## YOLOV8 with Code
+## YOLOV8 object detection with Code
 
 **Contents**
 
