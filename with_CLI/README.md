@@ -1,4 +1,4 @@
-## YOLOV8 object detection with CLI(Command Line Interface)
+## YOLOv8 object detection with CLI(Command Line Interface)
 
   
 
@@ -11,7 +11,7 @@ Pip install the ultralytics package including all requirements.
 
   
   
-Run this comman in CLI.  
+Run this command in CLI.  
   
 
     yolo predict model=yolov8n.pt source='img.jpg' show=True save_txt=True  
