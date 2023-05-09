@@ -56,6 +56,50 @@ def customized_annotations_img(img_pth):
     cv2.imwrite("../datas/test_img_result_customized.jpg", img)
 
 
+def automatic_annotations_video(video_pth):
+    # Set Video
+    cap = cv2.VideoCapture(video_pth)
+    cap.set(cv2.CAP_PROP_FRAME_WIDTH, 1280)
+    cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 720)
+
+    # Set video writer
+    writer = cv2.VideoWriter('../datas/test_video_result_automatic.mp4',
+                             cv2.VideoWriter_fourcc(*'DIVX'), 25, (1280, 720))
+
+    # Start
+    while True:
+        ret, frame = cap.read()
+
+        if not ret:
+            print("Error starting camera")
+            break
+
+        try:
+            # Give img to the model
+            result = model(frame)
+
+            # Get annotated frame
+            frame = result[0].plot()
+
+        except Exception as e:
+            print(e)
+
+        # Show video
+        cv2.imshow("frame", frame)
+
+        # Write frames for a video
+        writer.write(frame)
+
+        # Press 'q' to quit
+        if cv2.waitKey(1) & 0xFF == ord("q"):
+            break
+
+    # Close video writer and video
+    cap.release()
+    writer.release()
+    cv2.destroyAllWindows()
+
+
 def customized_annotations_video(video_pth):
     # Set Video
     cap = cv2.VideoCapture(video_pth)
@@ -68,10 +112,13 @@ def customized_annotations_video(video_pth):
 
     # Start
     while True:
+
         ret, frame = cap.read()
+
         if not ret:
             print("Error starting camera")
             break
+
         try:
             # Give img to the model
             result = model(frame)
@@ -101,7 +148,7 @@ def customized_annotations_video(video_pth):
 
         except Exception as e:
             print(e)
-            
+
         # Show video
         cv2.imshow("frame", frame)
 
@@ -117,11 +164,13 @@ def customized_annotations_video(video_pth):
     writer.release()
     cv2.destroyAllWindows()
 
+
 img_pth = "../datas/test_img.jpg"
 
 automatic_annotations_img(img_pth)
 customized_annotations_img(img_pth)
 
 video_pth = "../datas/test_video.mp4"
-customized_annotations_video(video_pth)
 
+automatic_annotations_video(video_pth)
+customized_annotations_video(video_pth)
