@@ -7,7 +7,7 @@ import cv2
 model = YOLO("yolov8m.pt")
 
 
-# Automatic annotations
+# Automatic annotations image
 def automatic_annotations_img(img_pth):
     # Open the img
     img = cv2.imread(img_pth)
@@ -22,7 +22,7 @@ def automatic_annotations_img(img_pth):
     cv2.imwrite("../datas/test_img_result_automatic.jpg", annotated_img)
 
 
-# Customized annotations
+# Customized annotations image
 def customized_annotations_img(img_pth):
     # Open the img
     img = cv2.imread(img_pth)
@@ -56,6 +56,7 @@ def customized_annotations_img(img_pth):
     cv2.imwrite("../datas/test_img_result_customized.jpg", img)
 
 
+# Automatic annotations video
 def automatic_annotations_video(video_pth):
     # Set Video
     cap = cv2.VideoCapture(video_pth)
@@ -100,6 +101,7 @@ def automatic_annotations_video(video_pth):
     cv2.destroyAllWindows()
 
 
+# Customized annotations video
 def customized_annotations_video(video_pth):
     # Set Video
     cap = cv2.VideoCapture(video_pth)
