@@ -2,20 +2,20 @@
 In this repo, I am using the pretrained YOLOv8 models with code and CLI(Command Line Interface). I performed my tests on military aircrafts.  
   
 **Contents**  
-Customized annotations on video and images  
+Customized annotations on video and images.
   
 **Results**  
- - Customized annotations of a video
+ - Customized annotations of a video.
 			 ![alt-text](https://github.com/muhammedenesbalci/YOLOv8-Object-Detection/blob/main/datas/test_video_result_gif.gif?raw=true)  
   
   
- - Customized annotations of an images
+ - Customized annotations of an images.
 ![alt-text](https://github.com/muhammedenesbalci/YOLOv8-Object-Detection/blob/main/datas/test_img_result_customized.jpg?raw=true)  
   
- - Automatic annotations of a video
+ - Automatic annotations of a video.
  ![alt-text](https://github.com/muhammedenesbalci/YOLOv8-Object-Detection/blob/main/datas/test_video_result_gif_2.gif?raw=true)
  
- - Automatic annotations of an images
+ - Automatic annotations of an images.
 ![alt-text](https://github.com/muhammedenesbalci/YOLOv8-Object-Detection/blob/main/datas/test_img_result_automatic.jpg?raw=true)
 
 **Resources**  
