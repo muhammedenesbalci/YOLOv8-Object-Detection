@@ -4,6 +4,7 @@
 
  - Automatic annotations for an image
  - Customized annotations for an image
+ - Automatic annotations for a video
  - Customized annotations for a video
 
 **Requirements**
